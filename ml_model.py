@@ -10,7 +10,7 @@ test_images = test_images.reshape(10000, 28, 28, 1)
 test_images = test_images / 255.0
 
 model = tf.keras.models.Sequential([
-    tf.keras.layers.Flattern(),
+    tf.keras.layers.Flatten(),
     tf.keras.layers.Dense(128, activator='relu'),
     tf.keras.layers.Dense(10, activator='softmax')
 ])
